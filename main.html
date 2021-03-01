@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Form using HTML</title>
+	<title>Leap Year Detector</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			text-align: center;
+			background-image: url("mm.jpg");
+			background-size: cover;
+		}
+		button {
+			padding: 25px;
+			font-weight: bold;
+			border-radius: 5px;
+			border:0px;
+			background-color: grey;
+		}
+		#box {
+			position: absolute;
+			top:150px;
+			left:400px; 
+			background-color: #f4f4f4;
+			height:300px;
+			width: 550px;
+			border :2px solid black;
+			border-radius: 5px;
+			
+		}
+	</style>
 </head>
+
 <body>
-  <form>
-  	<label>Name</label>
-  	<input type="text" name="name">
-  	<br>
-  	<hr>
-  	<label>Birth date</label>
-  	<input type="Date" name="day">
-  	<br>
-  	<hr>
-  	<label>Mobile Number</label>
-  	<input type="text" name="">
-  	<br>
-  	<hr>
-  	<label>Company</label>
-  	<select>
-  		<option>Null</option>
-  		<option>A</option>
-  		<option>B</option>
-  	</select>
-  	<br>
-  	<hr>
-  	<label>Email Address</label>
-  	<input type="Email" name="">
-  		<input type="checkbox" name="">
-  	<label> Bike</label>
-  	 	<input type="checkbox" name="">
-  	<label> Car</label>
-  	 	<input type="checkbox" name="">
-  	<label> Feet</label>
-  	<br>
-  	<hr>
-  	<button>Submit</button>
-  </form>
+	<div id="box">
+	<br>
+	<br>
+   <h2> LEAP YEAR DETECTOR </h2>
+   <br>
+   <br>
+   <button onclick=leapYr()>CLICK ME </button>
+   <br>
+   </div>
+
+
+ <script type="text/javascript">
+
+	function leapYr() {
+		var ask = prompt("Enter The Year you want to check")
+ 			if (ask % 4 == 0) {
+ 				document.write("The Given year is a leap year");
+			}
+ 			else {
+				document.write("The given Year is not a Leap Year") 			
+			}
+ 		}
+ 	
+ </script>
 </body>
 </html>
